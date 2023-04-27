@@ -1,0 +1,88 @@
+.app_bar{
+    position: fixed;
+    height: 78px;
+    width: 100%;
+    /* background-color: rgb(40 110 116); */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.app_bar a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.app_bar .btn{
+    display: none;
+
+}
+
+.nav a{
+    color: white;
+    font-size: 16px;
+}
+.home_section{
+    
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(0deg, rgb(14 14 14 / 73%), rgb(26 213 196 / 52%)), url("../images/home_background.webp");
+    
+}
+.home_section h1{
+    color: white;
+}
+.home_text_switch h1{
+    letter-spacing: 5px;
+    line-height: 66px;
+}
+
+
+
+.about_section{
+    height: 100vh;
+    /* background-color: aqua; */
+    background-color: #0b1a25;
+}
+.about_section h1{
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .app_bar {
+      background-color: olive;
+    }
+    .app_bar a{
+        display: none;
+    }
+    .app_bar .btn{
+        display: block;
+    
+    }
+    .home_text_switch h1{
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+
+
+
+
+   
+    
+
+  }
+
+  /* @media screen and (max-width: 1300px) {
+    .app_bar .btn{
+        display: none;
+    }
+    
+  } */
