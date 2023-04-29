@@ -1,8 +1,12 @@
+body{
+    background-color: #0b1a25;;
+}
 .app_bar{
+    z-index: 1;
     position: fixed;
     height: 78px;
     width: 100%;
-    /* background-color: rgb(40 110 116); */
+    background-color: rgb(3 110 111);
     display: flex;
     align-items: center;
     justify-content: end;
@@ -24,17 +28,19 @@
 }
 .home_section{
     
-    height: 75vh;
+    height:75vh;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-repeat: repeat-x;
+   
+    /* background-color: #0b1a25; */
     background-image: linear-gradient(0deg, rgb(14 14 14 / 73%), rgb(26 213 196 / 52%)), url("../images/home_background.webp");
     
 }
 .home_section h1{
     color: white;
+   
 }
 .home_text_switch h1{
     letter-spacing: 5px;
@@ -44,13 +50,28 @@
 
 
 .about_section{
-    height: 100vh;
+    z-index: 0;
+
     /* background-color: aqua; */
     background-color: #0b1a25;
 }
-.about_section h1{
+.about_heading{
     color: white;
 }
+
+.about_content{
+    color:white;
+    text-align: center;
+}
+#about{
+    margin-top: 85px;
+    height: 81vh;
+}
+.photo_section{
+    border-style: solid ;
+    height: 60vh;
+}
+
 
 
 
@@ -68,6 +89,7 @@
     
     }
     .home_text_switch h1{
+        font-size: 30px;
         line-height: 30px;
         letter-spacing: 3px;
     }
