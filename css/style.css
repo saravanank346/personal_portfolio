@@ -58,22 +58,54 @@ body{
 .about_heading{
     color: white;
 }
+.about_row{
+    background-color: black ;
+    height: 400px;
+    padding-left: 32px;
+    padding-top: 51px;
+}
 
 .about_content{
     color:white;
-    text-align: center;
+    
+
 }
 #about{
-    margin-top: 85px;
-    height: 81vh;
+    margin-top: 115px;
+    
 }
 .photo_section{
     border-style: solid ;
     height: 60vh;
 }
-
-
-
+.lets_talk {
+    padding-top: 18px;
+    line-height: 35px;
+}
+.skills_section h1{
+    color: white;
+}
+#skills{
+    
+}
+.help{
+    display: flex;
+    align-items: center;
+}
+.tree_help{
+    background-color: black;
+    height: 304px;
+    padding-top: 18px;
+   
+}
+.tree_help p{
+    
+    color: white;
+}
+.gap{
+    height: 300px;
+    width:100%
+}
 
 
 
