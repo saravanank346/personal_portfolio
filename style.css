@@ -8,6 +8,7 @@ body{
 html
 {
     overflow-x: hidden;
+    
 }
 .app_bar{
     z-index: 1;
@@ -17,7 +18,7 @@ html
     background-color: rgb(3 110 111);
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 .app_bar a{
     padding-left: 30px;
@@ -43,7 +44,8 @@ html
     justify-content: center;
     align-content: center;
     background-repeat: repeat-x;
-    background-size: contain;
+    
+    
     
  
    
@@ -59,6 +61,12 @@ html
 .home_text_switch h1{
     letter-spacing: 5px;
     line-height: 66px;
+}
+.home_text_switch h3{
+    font-size: 14px;
+    line-height:38.2px;
+    letter-spacing: 3px;
+    color:#FFFFFF99;
 }
 
 
@@ -111,8 +119,10 @@ html
     
 }
 .help{
+    
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-bottom: 80px;
 }
 .tree_help{
@@ -457,52 +467,30 @@ font-family: 'Montserrat';
 
 
 
-@media screen and (max-width: 600px) {
-    body{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+@media screen and (min-width:300px )and (max-width: 650px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  html{
+    overflow-x: hidden;
+  }
+  .home_section{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .app_bar{
+    display: none;
+  }
 
-    }
-    .app_bar {
-      background-color: olive;
-    }
-    .app_bar a{
-        display: none;
-    }
-    .app_bar .btn{
-        display: block;
     
-    }
-    .home_section{
-        height: 100%;
-        width: 100%;
-    }
-    .home_text_switch h1{
-        font-size: 30px;
-        line-height: 30px;
-        letter-spacing: 3px;
-    }
-    .about_row{
-        background-color: black ;
-        width: 100%;
-    
-    height: 400px;
+
+   
+
     
         
     }
 
-
-
-
-   
-    
-
-  }
-
-  /* @media screen and (max-width: 1300px) {
-    .app_bar .btn{
-        display: none;
-    }
-    
-  } */
+  
