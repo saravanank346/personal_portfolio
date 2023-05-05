@@ -538,6 +538,16 @@ font-family: 'Montserrat';
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
+  .image_section{
+    width: 448px;
+    height: auto;
+   
+   
+    transform: translate(-143px, -62px);
+    /* transform: translate(-197px, -67px) */
+    
+  
+  }
 
     
 
