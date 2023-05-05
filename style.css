@@ -432,9 +432,9 @@ font-family: 'Montserrat';
       display: flex;
       flex-direction: column;
     }
-    .direct-contact-container, .form-horizontal {
+    /* .direct-contact-container, .form-horizontal {
       margin: 0 auto;
-    }  
+    }   */
     
     .direct-contact-container {
       margin-top: 60px;
