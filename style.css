@@ -513,6 +513,7 @@ font-family: 'Montserrat';
    
   }
   .home_section{
+    
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -520,6 +521,10 @@ font-family: 'Montserrat';
   .app_bar{
     display: none;
   }
+  #about{
+    margin-top: 0px;
+  }
+  
 
     
 
