@@ -548,6 +548,18 @@ font-family: 'Montserrat';
     
   
   }
+  .home_text_switch h1{
+    font-size: 21px;
+    letter-spacing: 3px;
+    line-height: 31px;
+}
+.home_text_switch h3{
+    font-size: 14px;
+    line-height:38.2px;
+    letter-spacing: 3px;
+    color:#FFFFFF99;
+}
+
 
     
 
