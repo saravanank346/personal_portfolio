@@ -127,6 +127,11 @@ body{
     color:white;
    
 }
+.btn a{
+  text-decoration: none;
+  color: white;
+
+}
 .photo_section{
     border-style: solid ;
     height: 60vh;
