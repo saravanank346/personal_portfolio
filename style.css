@@ -150,6 +150,9 @@ body{
   transition: .3s;
   color: #e0dcdc;
 }
+.btn{
+  background-color: rgb(3 110 111);
+}
 .btn a{
   text-decoration: none;
   color: white;
@@ -221,6 +224,7 @@ body{
 hr{
   
     color: aqua;
+    
     margin-top: -11px;
     margin-left: 91px;
     margin-right: 28px;
@@ -323,6 +327,7 @@ font-family: 'Montserrat';
   }
   
   .alt-send-button {
+    color: white;
     
     height: 34px;
     transition: all .2s ease-in-out;
