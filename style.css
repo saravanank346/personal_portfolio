@@ -16,7 +16,12 @@ body{
   
 
 }
-.collapse{
+.nav-link:hover{
+  
+  color:#e77d5a  !important;
+  font-size: 15px;
+}
+.collapse{ 
   display: flex;
   justify-content: center;
 }
@@ -290,7 +295,7 @@ font-family: 'Montserrat';
   }
   
   .alt-send-button {
-    width: 400px;
+    
     height: 34px;
     transition: all .2s ease-in-out;
   }
@@ -534,7 +539,7 @@ font-family: 'Montserrat';
   .send-button {
     margin-top: 15px;
     height: 34px;
-    width: 340px;
+    
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
