@@ -203,7 +203,7 @@ body{
     width:100%
 }
 .gap_100{
-    height: 100px;
+    height: 00px;
     width:100%
 }
 #education h2{
@@ -390,6 +390,12 @@ font-family: 'Montserrat';
     margin-left: 0px !important;
 
   }
+  .social-media-list.disable ul{
+     margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
   
   
   /* Social Media Icons */
@@ -420,7 +426,7 @@ font-family: 'Montserrat';
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:after {
+  /* .social-media-list li:after {
     content: '';
     position: absolute;
     top: 0;
@@ -432,10 +438,13 @@ font-family: 'Montserrat';
     opacity: 0;
     box-shadow: 0 0 0 1px #fff;
     transition: all .2s ease-in-out;
-  }
+  } */
   
   .social-media-list li:hover {
     background-color: #fff; 
+  }
+  .social-media-list ul{
+   
   }
   
   .social-media-list li:hover:after {
@@ -592,6 +601,7 @@ font-family: 'Montserrat';
     letter-spacing: 3px;
     color:#FFFFFF99;
 }
+
 
 
     
