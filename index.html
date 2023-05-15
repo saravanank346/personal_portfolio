@@ -6,7 +6,7 @@
     <title>Personal_portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:ital,wght@0,100;0,300;1,100&family=Righteous&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../javascript/text_switching.js"></script>
+    <!-- <script src="../javascript/text_switching.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
@@ -402,7 +402,7 @@
              
             <div class="form-group">
               <div class="col-sm-12">
-                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                <input type="text" class="form-control" id="user_name" placeholder="NAME" name="name" value="" required>
               </div>
             </div>
       
@@ -412,11 +412,11 @@
               </div>
             </div>
       
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message" required></textarea>
             
             <button class="btn  send-button " id="submit" type="submit" value="SEND">
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              <div class="" >
+                <i class="fa fa-paper-plane"></i><span onclick="send()">SEND</span>
               </div>
             
             </button>
@@ -480,6 +480,30 @@
         
         AOS.init();
     </script>
+
+    <script>
+      function send(){
+        console.log("clicked")
+        fetch("http://localhost:3000/insert",{
+            method:"post",
+            
+            body:JSON.stringify({
+                user_name:document.getElementById("user_name").value,
+                email:document.getElementById("email").value,
+                message:document.getElementById("message").value,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+              },
+           
+        })
+        .then((response)=>response.json())
+        .then((json)=>console.log(json));
+        
     
+    }
+
+    </script>
+    <!-- <script src='main.js'></script> -->
 </body>
 </html>
